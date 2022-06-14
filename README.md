@@ -88,7 +88,7 @@ Imbalanced Classification Report below:
 
 	
 ## Summary 
-#### Overall Performance of Supervised Machine Learning Algorithm:
+#### Overall Performance of Supervised Machine Learning Algorithm based on "High Risk" Results:
 |   Method     |  Balanced Accuracy  |  Precision  |  Recall | F1 | 
 | -------------|:-------------------:|:-----------:|:-------:|:--:|
 | Naive Random Oversampling    | 64%| 1%| 72% | 2% |
