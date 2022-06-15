@@ -73,6 +73,13 @@ Imbalanced Classification Report below:
 
 ![BRFC](https://user-images.githubusercontent.com/96746207/173452822-44b9f192-1dc0-4e15-a92c-76292de3114c.png)
 
+
+Balanced random forest algorithm ranked the features by their importance and what features are more relevant for the credit card application. 
+The top five features of importance are displayed below:
+
+![important_R](https://user-images.githubusercontent.com/96746207/173918328-e0638bc4-7608-4e1c-b365-74dc825e7e8f.png)
+
+
 #### Easy Ensemble AdaBoost Classifier
 - Balanced Accuracy:93%
 
@@ -89,16 +96,20 @@ Imbalanced Classification Report below:
 	
 ## Summary 
 #### Overall Performance of Supervised Machine Learning Algorithm based on "High Risk" Results:
-|   Method     |  Balanced Accuracy  |  Precision  |  Recall | F1 | 
-| -------------|:-------------------:|:-----------:|:-------:|:--:|
-| Naive Random Oversampling    | 64%| 1%| 72% | 2% |
-| SMOTE Oversampling     |  66%| 1%| 62% | 2% | 
-| Undersampling Cluster Centroids | 66%| 1%| 62% | 2% | 
-| SMOTEENN Combination Sampling |  66%| 1%| 62% | 2% |
-| Balanced Random Forest Classifier |  79%| 3%| 70% | 6% |
-| Easy Ensemble AdaBoost Classifier |  93%| 9%| 92% | 16% |
+|   Method     |  Balanced Accuracy  |  Precision  |  Recall | F1 (Avg/total | 
+| -------------|:-------------------:|:-----------:|:-------:|:-------------:|
+| Naive Random Oversampling    | 64%| 1%| 72% | 71% |
+| SMOTE Oversampling     |  66%| 1%| 62% | 81% | 
+| Undersampling Cluster Centroids | 66%| 1%| 62% | 81% | 
+| SMOTEENN Combination Sampling |  66%| 1%| 62% | 81% |
+| Balanced Random Forest Classifier |  79%| 3%| 70% | 93% |
+| Easy Ensemble AdaBoost Classifier |  93%| 9%| 92% | 97% |
    
+The oversampling, undersampling, and combination sampling models all displayed a low balanced accuracy score in the range of sixty percent. Balance random forest classifier model has a higher balanced accuracy score of 79%, however, the best overall model is the easy ensemble AdaBoost classifier. 
 
-Based on the given results, the Easy Ensemble AdaBoost Classifier Model has the highest balanced accuracy score at 93%, with a precision rank of 9% for predicting high-risk customers. 
+Based on the given results above, easy ensemble AdaBoost classifier model is the preferred choice. The model has the highest balanced accuracy score at 93%, with a precision rank of 99% for predicting high-risk customers and the recall rate was the highest,92%. F1 score is 97% and the closer to one, the better the model.  
+
+
+
 
 
