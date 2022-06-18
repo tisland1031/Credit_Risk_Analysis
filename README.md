@@ -34,30 +34,28 @@ Imbalanced Classification Report below:
 
 ### Undersampling
 #### Cluster Centroids
-- Balanced Accuracy:66%
+- Balanced Accuracy:54%
 
-![Undersampling BA](https://user-images.githubusercontent.com/96746207/173454132-960804a0-47d0-4a39-841a-0ca817233659.png)
-
+![under_BA](https://user-images.githubusercontent.com/96746207/174448132-4e240a25-abf7-4750-814f-ec13afe5e357.png)
 - High Risk Precision:1%
-- High Risk Recall:62%
+- High Risk Recall:69%
 - High Risk F1:2%
 
 Imbalanced Classification Report below:
 
-![Undersampling](https://user-images.githubusercontent.com/96746207/173452801-d5a0bb8d-c53d-451c-89b8-de82e4dc1abe.png)
+![under_ICR](https://user-images.githubusercontent.com/96746207/174448135-c2ae4c25-7402-4a8a-aa09-8d33907ffe2f.png)
 
 ### Combination (Over and Under) Sampling
-- Balanced Accuracy:66%
+- Balanced Accuracy:62%
 
-![comb BA](https://user-images.githubusercontent.com/96746207/173454339-ab5f8bab-8dbc-44b5-a015-f0ac2ef44c0d.png)
-
+![SMTEENN_BA](https://user-images.githubusercontent.com/96746207/174448138-0b483935-b31a-4e98-9562-a07da4062d51.png)
 - High Risk Precision:1%
-- High Risk Recall:62%
+- High Risk Recall:68%
 - High Risk F1:2%
 
 Imbalanced Classification Report below:
 
-![Combination](https://user-images.githubusercontent.com/96746207/173452813-0af95abe-6b6e-4dff-86fd-db38d88d29cb.png)
+![COMB_ICR](https://user-images.githubusercontent.com/96746207/174448139-e77c6bd2-db19-471f-a9a7-8740196207a0.png)
 
 ### Ensemble Leaners
 #### Balanced Random Forest Classifier
@@ -100,14 +98,17 @@ Imbalanced Classification Report below:
 | -------------|:-------------------:|:-----------:|:-------:|:-------------:|
 | Naive Random Oversampling    | 64%| 1%| 72% | 71% |
 | SMOTE Oversampling     |  66%| 1%| 62% | 81% | 
-| Undersampling Cluster Centroids | 66%| 1%| 62% | 81% | 
-| SMOTEENN Combination Sampling |  66%| 1%| 62% | 81% |
+| Undersampling Cluster Centroids | 54%| 1%| 69% | 56% | 
+| SMOTEENN Combination Sampling |  62%| 1%| 68% | 70% |
 | Balanced Random Forest Classifier |  79%| 3%| 70% | 93% |
 | Easy Ensemble AdaBoost Classifier |  93%| 9%| 92% | 97% |
    
-The oversampling, undersampling, and combination sampling models all displayed a low balanced accuracy score in the range of sixty percent. Balance random forest classifier model has a higher balanced accuracy score of 79%, however, the best overall model is the easy ensemble AdaBoost classifier. 
+The oversampling, undersampling, and combination sampling models all displayed a low balanced accuracy score in the range between 54-66 percent. Balance random forest classifier model has a higher balanced accuracy score of 79%, however, the best overall model is the easy ensemble AdaBoost classifier. 
 
 Based on the given results above, easy ensemble AdaBoost classifier model is the preferred choice. The model has the highest balanced accuracy score at 93%, with a precision rank of 99% for predicting high-risk customers and the recall rate was the highest,92%. F1 score is 97% and the closer to one, the better the model.  
+
+
+
 
 
 
