@@ -13,7 +13,7 @@ Results are displayed for the following six machine learning models:
 
 - High Risk Precision:1%
 - High Risk Recall:72%
-- High Risk F1:2%
+- High Risk F1:1%
 
 Imbalanced Classification Report below:
 
